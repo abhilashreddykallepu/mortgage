@@ -1,2 +1,3 @@
-platform :ios>5.0
-pod 'FlatUIKit'
+
+
+pod 'IQKeyboardManager', '~>2.5.0'

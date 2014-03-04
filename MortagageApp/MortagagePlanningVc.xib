@@ -7,6 +7,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MortagagePlanningVc">
             <connections>
+                <outlet property="accessorView" destination="kWK-UB-FXf" id="syp-M9-vKW"/>
                 <outlet property="view" destination="1" id="3"/>
             </connections>
         </placeholder>
@@ -29,5 +30,17 @@
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
         </view>
+        <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="kWK-UB-FXf">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+            <items>
+                <barButtonItem width="118" style="plain" systemItem="fixedSpace" id="jVf-Tu-B60"/>
+                <barButtonItem title="Done" id="RPO-kw-PNt">
+                    <connections>
+                        <action selector="keyBoardDoneClicked:" destination="-1" id="Ji3-RV-r75"/>
+                    </connections>
+                </barButtonItem>
+            </items>
+        </toolbar>
     </objects>
 </document>

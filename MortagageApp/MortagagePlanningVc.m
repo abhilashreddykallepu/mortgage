@@ -35,9 +35,11 @@
     // Do any additional setup after loading the view from its nib.
     //self.navigationController.navigationBar.translucent = NO;
     arr=[[NSArray alloc]initWithObjects:@"Mortgage Amount:",@"Amortization:",@"Interest:",@"Payment Frequency",nil];
+    
 }
 
 #pragma mark -tableViewDatasource
+
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
     
     return 2;
@@ -78,6 +80,7 @@
         UITextField *textfield=[[UITextField alloc]initWithFrame:CGRectMake(200, 6, 100, 30)];
         textfield.borderStyle=UITextBorderStyleLine;
         textfield.tag=indexPath.row+1;
+        textfield.delegate=self;
         textfield.placeholder=[placeHolderArray objectAtIndex:indexPath.row];
         textfield.textColor=[UIColor whiteColor];
         [cell addSubview:textfield];
@@ -97,23 +100,43 @@
     
     return cell;
 }
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    if (indexPath.row==1) {
+        UIActionSheet *sheet=[[UIActionSheet alloc]initWithTitle:@"Done" delegate:self cancelButtonTitle:@"Cancel" destructiveButtonTitle:nil otherButtonTitles: nil];
+        UIView *view=[[UIView alloc]initWithFrame:CGRectMake(2, 4, sheet.frame.size.width-4, sheet.frame.size.height-8)];
+        view.backgroundColor=[UIColor greenSeaColor];
+        [sheet addSubview:view];
+        [sheet showInView:self.view];
+        
+    }
+}
+
+#pragma mark --textFieldDelegate
+
+-(BOOL)textFieldShouldReturn:(UITextField *)textField{
+    [textField resignFirstResponder];
+    return YES;
+}
+
+- (BOOL)textFieldShouldBeginEditing:(UITextField *)textField{
+    
+    //if (!textField.inputAccessoryView) {
+        
+        textField.inputAccessoryView = accessorView;
+    //}
+    return YES;
+}
+
+#pragma mark
+- (IBAction)keyBoardDoneClicked:(id)sender {
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-}
-
--(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    
-    
-    
-    
-}
-
--(BOOL)textFieldShouldReturn:(UITextField *)textField{
-    
-    
-    return [textField resignFirstResponder];
 }
 
 @end

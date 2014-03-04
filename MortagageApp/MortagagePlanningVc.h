@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MortagagePlanningVc : UIViewController<UITableViewDelegate,UITableViewDataSource,UITextFieldDelegate>
+@interface MortagagePlanningVc : UIViewController<UITableViewDelegate,UITableViewDataSource,UITextFieldDelegate,UIActionSheetDelegate>
 {
     NSArray *arr;
+    IBOutlet UIToolbar *accessorView;
 }
 @end
