@@ -24,6 +24,8 @@
     if (self) {
         // Custom initialization
         //added some shit  jhgvjhgv
+        
+        //dumbies
     }
     return self;
 }
