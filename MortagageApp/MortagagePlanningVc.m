@@ -27,6 +27,7 @@
     return self;
 }
 
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -36,9 +37,18 @@
     arr=[[NSArray alloc]initWithObjects:@"Mortgage Amount:",@"Amortization:",@"Interest:",@"Payment Frequency",nil];
 }
 
+#pragma mark -tableViewDatasource
+-(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
+    
+    return 2;
+}
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     
-    return arr.count;
+    if (section==0) {
+        return arr.count;
+    }else{
+        return 2;
+    }
     
 }
 
@@ -54,25 +64,37 @@
         cell.cornerRadius = 10.f; //Optional
         cell.separatorHeight = 1.0f; // optional
         
-        }
-    
-    UILabel *idexLabel=[[UILabel alloc]initWithFrame:CGRectMake(3, 6, 150, 30)];
-    [idexLabel setText:[arr objectAtIndex:indexPath.row]];
-    [idexLabel setTextColor:[UIColor whiteColor]];
-    [idexLabel setTextAlignment:NSTextAlignmentLeft];
-    [cell addSubview:idexLabel];
-    
-    
-    UITextField *textfield=[[UITextField alloc]initWithFrame:CGRectMake(200, 6, 100, 30)];
-    textfield.borderStyle=UITextBorderStyleLine;
-    textfield.tag=indexPath.row+1;
-    textfield.placeholder=[placeHolderArray objectAtIndex:indexPath.row];
-    textfield.textColor=[UIColor whiteColor];
-    [cell addSubview:textfield];
-    if (indexPath.row==1||indexPath.row==3) {
-        [textfield setUserInteractionEnabled:NO];
     }
-
+    
+    if (indexPath.section==0) {
+        
+        UILabel *idexLabel=[[UILabel alloc]initWithFrame:CGRectMake(3, 6, 150, 30)];
+        [idexLabel setText:[arr objectAtIndex:indexPath.row]];
+        [idexLabel setTextColor:[UIColor whiteColor]];
+        [idexLabel setTextAlignment:NSTextAlignmentLeft];
+        [cell addSubview:idexLabel];
+        
+        
+        UITextField *textfield=[[UITextField alloc]initWithFrame:CGRectMake(200, 6, 100, 30)];
+        textfield.borderStyle=UITextBorderStyleLine;
+        textfield.tag=indexPath.row+1;
+        textfield.placeholder=[placeHolderArray objectAtIndex:indexPath.row];
+        textfield.textColor=[UIColor whiteColor];
+        [cell addSubview:textfield];
+        if (indexPath.row==1||indexPath.row==3) {
+            [textfield setUserInteractionEnabled:NO];
+        }
+    }else if (indexPath.section==1){
+        
+        cell.textLabel.textColor=[UIColor whiteColor];
+        cell.textLabel.font=[UIFont boldSystemFontOfSize:14.0];
+        if (indexPath.row==0) {
+            cell.textLabel.text=@"Payment";
+        }else{
+            cell.textLabel.text=@"Schedule";
+        }
+    }
+    
     return cell;
 }
 - (void)didReceiveMemoryWarning
