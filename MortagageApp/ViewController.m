@@ -23,7 +23,7 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
-        //added some shit
+        //added some shit  jhgvjhgv
     }
     return self;
 }
