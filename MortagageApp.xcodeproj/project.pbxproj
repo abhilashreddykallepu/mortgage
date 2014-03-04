@@ -1,0 +1,668 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4000FA8518C5A49C00FE099F /* FUIAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4000FA5518C5A49C00FE099F /* FUIAlertView.m */; };
+		4000FA8618C5A49C00FE099F /* FUIButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4000FA5718C5A49C00FE099F /* FUIButton.m */; };
+		4000FA8718C5A49C00FE099F /* FUICellBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4000FA5918C5A49C00FE099F /* FUICellBackgroundView.m */; };
+		4000FA8818C5A49C00FE099F /* FUIPopoverBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4000FA5B18C5A49C00FE099F /* FUIPopoverBackgroundView.m */; };
+		4000FA8918C5A49C00FE099F /* FUISegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 4000FA5D18C5A49C00FE099F /* FUISegmentedControl.m */; };
+		4000FA8A18C5A49C00FE099F /* FUISwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = 4000FA5F18C5A49C00FE099F /* FUISwitch.m */; };
+		4000FA8B18C5A49C00FE099F /* FUITextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 4000FA6118C5A49C00FE099F /* FUITextField.m */; };
+		4000FA8C18C5A49C00FE099F /* UIBarButtonItem+FlatUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 4000FA6318C5A49C00FE099F /* UIBarButtonItem+FlatUI.m */; };
+		4000FA8D18C5A49C00FE099F /* UIColor+FlatUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 4000FA6518C5A49C00FE099F /* UIColor+FlatUI.m */; };
+		4000FA8E18C5A49C00FE099F /* UIFont+FlatUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 4000FA6718C5A49C00FE099F /* UIFont+FlatUI.m */; };
+		4000FA8F18C5A49C00FE099F /* UIImage+FlatUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 4000FA6918C5A49C00FE099F /* UIImage+FlatUI.m */; };
+		4000FA9018C5A49C00FE099F /* UINavigationBar+FlatUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 4000FA6B18C5A49C00FE099F /* UINavigationBar+FlatUI.m */; };
+		4000FA9118C5A49C00FE099F /* UIPopoverController+FlatUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 4000FA6D18C5A49C00FE099F /* UIPopoverController+FlatUI.m */; };
+		4000FA9218C5A49C00FE099F /* UIProgressView+FlatUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 4000FA6F18C5A49C00FE099F /* UIProgressView+FlatUI.m */; };
+		4000FA9318C5A49C00FE099F /* UISlider+FlatUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 4000FA7118C5A49C00FE099F /* UISlider+FlatUI.m */; };
+		4000FA9418C5A49C00FE099F /* UIStepper+FlatUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 4000FA7318C5A49C00FE099F /* UIStepper+FlatUI.m */; };
+		4000FA9518C5A49C00FE099F /* UITabBar+FlatUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 4000FA7518C5A49C00FE099F /* UITabBar+FlatUI.m */; };
+		4000FA9618C5A49C00FE099F /* UITableViewCell+FlatUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 4000FA7718C5A49C00FE099F /* UITableViewCell+FlatUI.m */; };
+		4000FA9718C5A49C00FE099F /* UIToolbar+FlatUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 4000FA7918C5A49C00FE099F /* UIToolbar+FlatUI.m */; };
+		4000FA9818C5A49C00FE099F /* Lato-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4000FA7B18C5A49C00FE099F /* Lato-Black.ttf */; };
+		4000FA9918C5A49C00FE099F /* Lato-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4000FA7C18C5A49C00FE099F /* Lato-BlackItalic.ttf */; };
+		4000FA9A18C5A49C00FE099F /* Lato-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4000FA7D18C5A49C00FE099F /* Lato-Bold.ttf */; };
+		4000FA9B18C5A49C00FE099F /* Lato-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4000FA7E18C5A49C00FE099F /* Lato-BoldItalic.ttf */; };
+		4000FA9C18C5A49C00FE099F /* Lato-Hairline.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4000FA7F18C5A49C00FE099F /* Lato-Hairline.ttf */; };
+		4000FA9D18C5A49C00FE099F /* Lato-HairlineItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4000FA8018C5A49C00FE099F /* Lato-HairlineItalic.ttf */; };
+		4000FA9E18C5A49C00FE099F /* Lato-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4000FA8118C5A49C00FE099F /* Lato-Italic.ttf */; };
+		4000FA9F18C5A49C00FE099F /* Lato-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4000FA8218C5A49C00FE099F /* Lato-Light.ttf */; };
+		4000FAA018C5A49C00FE099F /* Lato-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4000FA8318C5A49C00FE099F /* Lato-LightItalic.ttf */; };
+		4000FAA118C5A49C00FE099F /* Lato-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4000FA8418C5A49C00FE099F /* Lato-Regular.ttf */; };
+		40EE70A118C4442A00A21203 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40EE70A018C4442A00A21203 /* Foundation.framework */; };
+		40EE70A318C4442A00A21203 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40EE70A218C4442A00A21203 /* CoreGraphics.framework */; };
+		40EE70A518C4442A00A21203 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40EE70A418C4442A00A21203 /* UIKit.framework */; };
+		40EE70AB18C4442A00A21203 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 40EE70A918C4442A00A21203 /* InfoPlist.strings */; };
+		40EE70AD18C4442A00A21203 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 40EE70AC18C4442A00A21203 /* main.m */; };
+		40EE70B118C4442A00A21203 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 40EE70B018C4442A00A21203 /* AppDelegate.m */; };
+		40EE70B318C4442A00A21203 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40EE70B218C4442A00A21203 /* Images.xcassets */; };
+		40EE70BA18C4442A00A21203 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40EE70B918C4442A00A21203 /* XCTest.framework */; };
+		40EE70BB18C4442A00A21203 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40EE70A018C4442A00A21203 /* Foundation.framework */; };
+		40EE70BC18C4442A00A21203 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40EE70A418C4442A00A21203 /* UIKit.framework */; };
+		40EE70C418C4442A00A21203 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 40EE70C218C4442A00A21203 /* InfoPlist.strings */; };
+		40EE70C618C4442A00A21203 /* MortagageAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 40EE70C518C4442A00A21203 /* MortagageAppTests.m */; };
+		40EE70D218C4444300A21203 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40EE70D018C4444300A21203 /* ViewController.m */; };
+		40EE70D318C4444300A21203 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40EE70D118C4444300A21203 /* ViewController.xib */; };
+		40EE70D718C4503800A21203 /* MortagagePlanningVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 40EE70D518C4503800A21203 /* MortagagePlanningVc.m */; };
+		40EE70D818C4503800A21203 /* MortagagePlanningVc.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40EE70D618C4503800A21203 /* MortagagePlanningVc.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		40EE70BD18C4442A00A21203 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 40EE709518C4442A00A21203 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 40EE709C18C4442A00A21203;
+			remoteInfo = MortagageApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4000FA5318C5A49C00FE099F /* FlatUIKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlatUIKit.h; sourceTree = "<group>"; };
+		4000FA5418C5A49C00FE099F /* FUIAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FUIAlertView.h; sourceTree = "<group>"; };
+		4000FA5518C5A49C00FE099F /* FUIAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FUIAlertView.m; sourceTree = "<group>"; };
+		4000FA5618C5A49C00FE099F /* FUIButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FUIButton.h; sourceTree = "<group>"; };
+		4000FA5718C5A49C00FE099F /* FUIButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FUIButton.m; sourceTree = "<group>"; };
+		4000FA5818C5A49C00FE099F /* FUICellBackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FUICellBackgroundView.h; sourceTree = "<group>"; };
+		4000FA5918C5A49C00FE099F /* FUICellBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FUICellBackgroundView.m; sourceTree = "<group>"; };
+		4000FA5A18C5A49C00FE099F /* FUIPopoverBackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FUIPopoverBackgroundView.h; sourceTree = "<group>"; };
+		4000FA5B18C5A49C00FE099F /* FUIPopoverBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FUIPopoverBackgroundView.m; sourceTree = "<group>"; };
+		4000FA5C18C5A49C00FE099F /* FUISegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FUISegmentedControl.h; sourceTree = "<group>"; };
+		4000FA5D18C5A49C00FE099F /* FUISegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FUISegmentedControl.m; sourceTree = "<group>"; };
+		4000FA5E18C5A49C00FE099F /* FUISwitch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FUISwitch.h; sourceTree = "<group>"; };
+		4000FA5F18C5A49C00FE099F /* FUISwitch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FUISwitch.m; sourceTree = "<group>"; };
+		4000FA6018C5A49C00FE099F /* FUITextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FUITextField.h; sourceTree = "<group>"; };
+		4000FA6118C5A49C00FE099F /* FUITextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FUITextField.m; sourceTree = "<group>"; };
+		4000FA6218C5A49C00FE099F /* UIBarButtonItem+FlatUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+FlatUI.h"; sourceTree = "<group>"; };
+		4000FA6318C5A49C00FE099F /* UIBarButtonItem+FlatUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+FlatUI.m"; sourceTree = "<group>"; };
+		4000FA6418C5A49C00FE099F /* UIColor+FlatUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+FlatUI.h"; sourceTree = "<group>"; };
+		4000FA6518C5A49C00FE099F /* UIColor+FlatUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+FlatUI.m"; sourceTree = "<group>"; };
+		4000FA6618C5A49C00FE099F /* UIFont+FlatUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+FlatUI.h"; sourceTree = "<group>"; };
+		4000FA6718C5A49C00FE099F /* UIFont+FlatUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+FlatUI.m"; sourceTree = "<group>"; };
+		4000FA6818C5A49C00FE099F /* UIImage+FlatUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+FlatUI.h"; sourceTree = "<group>"; };
+		4000FA6918C5A49C00FE099F /* UIImage+FlatUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+FlatUI.m"; sourceTree = "<group>"; };
+		4000FA6A18C5A49C00FE099F /* UINavigationBar+FlatUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+FlatUI.h"; sourceTree = "<group>"; };
+		4000FA6B18C5A49C00FE099F /* UINavigationBar+FlatUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+FlatUI.m"; sourceTree = "<group>"; };
+		4000FA6C18C5A49C00FE099F /* UIPopoverController+FlatUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIPopoverController+FlatUI.h"; sourceTree = "<group>"; };
+		4000FA6D18C5A49C00FE099F /* UIPopoverController+FlatUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIPopoverController+FlatUI.m"; sourceTree = "<group>"; };
+		4000FA6E18C5A49C00FE099F /* UIProgressView+FlatUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIProgressView+FlatUI.h"; sourceTree = "<group>"; };
+		4000FA6F18C5A49C00FE099F /* UIProgressView+FlatUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIProgressView+FlatUI.m"; sourceTree = "<group>"; };
+		4000FA7018C5A49C00FE099F /* UISlider+FlatUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UISlider+FlatUI.h"; sourceTree = "<group>"; };
+		4000FA7118C5A49C00FE099F /* UISlider+FlatUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UISlider+FlatUI.m"; sourceTree = "<group>"; };
+		4000FA7218C5A49C00FE099F /* UIStepper+FlatUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIStepper+FlatUI.h"; sourceTree = "<group>"; };
+		4000FA7318C5A49C00FE099F /* UIStepper+FlatUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIStepper+FlatUI.m"; sourceTree = "<group>"; };
+		4000FA7418C5A49C00FE099F /* UITabBar+FlatUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBar+FlatUI.h"; sourceTree = "<group>"; };
+		4000FA7518C5A49C00FE099F /* UITabBar+FlatUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITabBar+FlatUI.m"; sourceTree = "<group>"; };
+		4000FA7618C5A49C00FE099F /* UITableViewCell+FlatUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+FlatUI.h"; sourceTree = "<group>"; };
+		4000FA7718C5A49C00FE099F /* UITableViewCell+FlatUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+FlatUI.m"; sourceTree = "<group>"; };
+		4000FA7818C5A49C00FE099F /* UIToolbar+FlatUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIToolbar+FlatUI.h"; sourceTree = "<group>"; };
+		4000FA7918C5A49C00FE099F /* UIToolbar+FlatUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIToolbar+FlatUI.m"; sourceTree = "<group>"; };
+		4000FA7B18C5A49C00FE099F /* Lato-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Black.ttf"; sourceTree = "<group>"; };
+		4000FA7C18C5A49C00FE099F /* Lato-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-BlackItalic.ttf"; sourceTree = "<group>"; };
+		4000FA7D18C5A49C00FE099F /* Lato-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Bold.ttf"; sourceTree = "<group>"; };
+		4000FA7E18C5A49C00FE099F /* Lato-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-BoldItalic.ttf"; sourceTree = "<group>"; };
+		4000FA7F18C5A49C00FE099F /* Lato-Hairline.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Hairline.ttf"; sourceTree = "<group>"; };
+		4000FA8018C5A49C00FE099F /* Lato-HairlineItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-HairlineItalic.ttf"; sourceTree = "<group>"; };
+		4000FA8118C5A49C00FE099F /* Lato-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Italic.ttf"; sourceTree = "<group>"; };
+		4000FA8218C5A49C00FE099F /* Lato-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Light.ttf"; sourceTree = "<group>"; };
+		4000FA8318C5A49C00FE099F /* Lato-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-LightItalic.ttf"; sourceTree = "<group>"; };
+		4000FA8418C5A49C00FE099F /* Lato-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Regular.ttf"; sourceTree = "<group>"; };
+		40EE709D18C4442A00A21203 /* MortagageApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MortagageApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		40EE70A018C4442A00A21203 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		40EE70A218C4442A00A21203 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		40EE70A418C4442A00A21203 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		40EE70A818C4442A00A21203 /* MortagageApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MortagageApp-Info.plist"; sourceTree = "<group>"; };
+		40EE70AA18C4442A00A21203 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		40EE70AC18C4442A00A21203 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		40EE70AE18C4442A00A21203 /* MortagageApp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MortagageApp-Prefix.pch"; sourceTree = "<group>"; };
+		40EE70AF18C4442A00A21203 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		40EE70B018C4442A00A21203 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		40EE70B218C4442A00A21203 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		40EE70B818C4442A00A21203 /* MortagageAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MortagageAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		40EE70B918C4442A00A21203 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		40EE70C118C4442A00A21203 /* MortagageAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MortagageAppTests-Info.plist"; sourceTree = "<group>"; };
+		40EE70C318C4442A00A21203 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		40EE70C518C4442A00A21203 /* MortagageAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MortagageAppTests.m; sourceTree = "<group>"; };
+		40EE70CF18C4444300A21203 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		40EE70D018C4444300A21203 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		40EE70D118C4444300A21203 /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		40EE70D418C4503800A21203 /* MortagagePlanningVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MortagagePlanningVc.h; sourceTree = "<group>"; };
+		40EE70D518C4503800A21203 /* MortagagePlanningVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MortagagePlanningVc.m; sourceTree = "<group>"; };
+		40EE70D618C4503800A21203 /* MortagagePlanningVc.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MortagagePlanningVc.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		40EE709A18C4442A00A21203 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40EE70A318C4442A00A21203 /* CoreGraphics.framework in Frameworks */,
+				40EE70A518C4442A00A21203 /* UIKit.framework in Frameworks */,
+				40EE70A118C4442A00A21203 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40EE70B518C4442A00A21203 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40EE70BA18C4442A00A21203 /* XCTest.framework in Frameworks */,
+				40EE70BC18C4442A00A21203 /* UIKit.framework in Frameworks */,
+				40EE70BB18C4442A00A21203 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4000FA5018C5A48B00FE099F /* FlatUI */ = {
+			isa = PBXGroup;
+			children = (
+				4000FA5118C5A49C00FE099F /* Classes */,
+				4000FA7A18C5A49C00FE099F /* Resources */,
+			);
+			name = FlatUI;
+			sourceTree = "<group>";
+		};
+		4000FA5118C5A49C00FE099F /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				4000FA5218C5A49C00FE099F /* ios */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		4000FA5218C5A49C00FE099F /* ios */ = {
+			isa = PBXGroup;
+			children = (
+				4000FA5318C5A49C00FE099F /* FlatUIKit.h */,
+				4000FA5418C5A49C00FE099F /* FUIAlertView.h */,
+				4000FA5518C5A49C00FE099F /* FUIAlertView.m */,
+				4000FA5618C5A49C00FE099F /* FUIButton.h */,
+				4000FA5718C5A49C00FE099F /* FUIButton.m */,
+				4000FA5818C5A49C00FE099F /* FUICellBackgroundView.h */,
+				4000FA5918C5A49C00FE099F /* FUICellBackgroundView.m */,
+				4000FA5A18C5A49C00FE099F /* FUIPopoverBackgroundView.h */,
+				4000FA5B18C5A49C00FE099F /* FUIPopoverBackgroundView.m */,
+				4000FA5C18C5A49C00FE099F /* FUISegmentedControl.h */,
+				4000FA5D18C5A49C00FE099F /* FUISegmentedControl.m */,
+				4000FA5E18C5A49C00FE099F /* FUISwitch.h */,
+				4000FA5F18C5A49C00FE099F /* FUISwitch.m */,
+				4000FA6018C5A49C00FE099F /* FUITextField.h */,
+				4000FA6118C5A49C00FE099F /* FUITextField.m */,
+				4000FA6218C5A49C00FE099F /* UIBarButtonItem+FlatUI.h */,
+				4000FA6318C5A49C00FE099F /* UIBarButtonItem+FlatUI.m */,
+				4000FA6418C5A49C00FE099F /* UIColor+FlatUI.h */,
+				4000FA6518C5A49C00FE099F /* UIColor+FlatUI.m */,
+				4000FA6618C5A49C00FE099F /* UIFont+FlatUI.h */,
+				4000FA6718C5A49C00FE099F /* UIFont+FlatUI.m */,
+				4000FA6818C5A49C00FE099F /* UIImage+FlatUI.h */,
+				4000FA6918C5A49C00FE099F /* UIImage+FlatUI.m */,
+				4000FA6A18C5A49C00FE099F /* UINavigationBar+FlatUI.h */,
+				4000FA6B18C5A49C00FE099F /* UINavigationBar+FlatUI.m */,
+				4000FA6C18C5A49C00FE099F /* UIPopoverController+FlatUI.h */,
+				4000FA6D18C5A49C00FE099F /* UIPopoverController+FlatUI.m */,
+				4000FA6E18C5A49C00FE099F /* UIProgressView+FlatUI.h */,
+				4000FA6F18C5A49C00FE099F /* UIProgressView+FlatUI.m */,
+				4000FA7018C5A49C00FE099F /* UISlider+FlatUI.h */,
+				4000FA7118C5A49C00FE099F /* UISlider+FlatUI.m */,
+				4000FA7218C5A49C00FE099F /* UIStepper+FlatUI.h */,
+				4000FA7318C5A49C00FE099F /* UIStepper+FlatUI.m */,
+				4000FA7418C5A49C00FE099F /* UITabBar+FlatUI.h */,
+				4000FA7518C5A49C00FE099F /* UITabBar+FlatUI.m */,
+				4000FA7618C5A49C00FE099F /* UITableViewCell+FlatUI.h */,
+				4000FA7718C5A49C00FE099F /* UITableViewCell+FlatUI.m */,
+				4000FA7818C5A49C00FE099F /* UIToolbar+FlatUI.h */,
+				4000FA7918C5A49C00FE099F /* UIToolbar+FlatUI.m */,
+			);
+			path = ios;
+			sourceTree = "<group>";
+		};
+		4000FA7A18C5A49C00FE099F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4000FA7B18C5A49C00FE099F /* Lato-Black.ttf */,
+				4000FA7C18C5A49C00FE099F /* Lato-BlackItalic.ttf */,
+				4000FA7D18C5A49C00FE099F /* Lato-Bold.ttf */,
+				4000FA7E18C5A49C00FE099F /* Lato-BoldItalic.ttf */,
+				4000FA7F18C5A49C00FE099F /* Lato-Hairline.ttf */,
+				4000FA8018C5A49C00FE099F /* Lato-HairlineItalic.ttf */,
+				4000FA8118C5A49C00FE099F /* Lato-Italic.ttf */,
+				4000FA8218C5A49C00FE099F /* Lato-Light.ttf */,
+				4000FA8318C5A49C00FE099F /* Lato-LightItalic.ttf */,
+				4000FA8418C5A49C00FE099F /* Lato-Regular.ttf */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		40EE709418C4442A00A21203 = {
+			isa = PBXGroup;
+			children = (
+				40EE70A618C4442A00A21203 /* MortagageApp */,
+				40EE70BF18C4442A00A21203 /* MortagageAppTests */,
+				40EE709F18C4442A00A21203 /* Frameworks */,
+				40EE709E18C4442A00A21203 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		40EE709E18C4442A00A21203 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				40EE709D18C4442A00A21203 /* MortagageApp.app */,
+				40EE70B818C4442A00A21203 /* MortagageAppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		40EE709F18C4442A00A21203 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				40EE70A018C4442A00A21203 /* Foundation.framework */,
+				40EE70A218C4442A00A21203 /* CoreGraphics.framework */,
+				40EE70A418C4442A00A21203 /* UIKit.framework */,
+				40EE70B918C4442A00A21203 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		40EE70A618C4442A00A21203 /* MortagageApp */ = {
+			isa = PBXGroup;
+			children = (
+				40EE70AF18C4442A00A21203 /* AppDelegate.h */,
+				40EE70B018C4442A00A21203 /* AppDelegate.m */,
+				40EE70CF18C4444300A21203 /* ViewController.h */,
+				40EE70D018C4444300A21203 /* ViewController.m */,
+				40EE70D118C4444300A21203 /* ViewController.xib */,
+				40EE70D418C4503800A21203 /* MortagagePlanningVc.h */,
+				40EE70D518C4503800A21203 /* MortagagePlanningVc.m */,
+				40EE70D618C4503800A21203 /* MortagagePlanningVc.xib */,
+				40EE70B218C4442A00A21203 /* Images.xcassets */,
+				40EE70A718C4442A00A21203 /* Supporting Files */,
+			);
+			path = MortagageApp;
+			sourceTree = "<group>";
+		};
+		40EE70A718C4442A00A21203 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4000FA5018C5A48B00FE099F /* FlatUI */,
+				40EE70A818C4442A00A21203 /* MortagageApp-Info.plist */,
+				40EE70A918C4442A00A21203 /* InfoPlist.strings */,
+				40EE70AC18C4442A00A21203 /* main.m */,
+				40EE70AE18C4442A00A21203 /* MortagageApp-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		40EE70BF18C4442A00A21203 /* MortagageAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				40EE70C518C4442A00A21203 /* MortagageAppTests.m */,
+				40EE70C018C4442A00A21203 /* Supporting Files */,
+			);
+			path = MortagageAppTests;
+			sourceTree = "<group>";
+		};
+		40EE70C018C4442A00A21203 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				40EE70C118C4442A00A21203 /* MortagageAppTests-Info.plist */,
+				40EE70C218C4442A00A21203 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		40EE709C18C4442A00A21203 /* MortagageApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 40EE70C918C4442A00A21203 /* Build configuration list for PBXNativeTarget "MortagageApp" */;
+			buildPhases = (
+				40EE709918C4442A00A21203 /* Sources */,
+				40EE709A18C4442A00A21203 /* Frameworks */,
+				40EE709B18C4442A00A21203 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MortagageApp;
+			productName = MortagageApp;
+			productReference = 40EE709D18C4442A00A21203 /* MortagageApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		40EE70B718C4442A00A21203 /* MortagageAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 40EE70CC18C4442A00A21203 /* Build configuration list for PBXNativeTarget "MortagageAppTests" */;
+			buildPhases = (
+				40EE70B418C4442A00A21203 /* Sources */,
+				40EE70B518C4442A00A21203 /* Frameworks */,
+				40EE70B618C4442A00A21203 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				40EE70BE18C4442A00A21203 /* PBXTargetDependency */,
+			);
+			name = MortagageAppTests;
+			productName = MortagageAppTests;
+			productReference = 40EE70B818C4442A00A21203 /* MortagageAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		40EE709518C4442A00A21203 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = Baraansoft;
+				TargetAttributes = {
+					40EE70B718C4442A00A21203 = {
+						TestTargetID = 40EE709C18C4442A00A21203;
+					};
+				};
+			};
+			buildConfigurationList = 40EE709818C4442A00A21203 /* Build configuration list for PBXProject "MortagageApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 40EE709418C4442A00A21203;
+			productRefGroup = 40EE709E18C4442A00A21203 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				40EE709C18C4442A00A21203 /* MortagageApp */,
+				40EE70B718C4442A00A21203 /* MortagageAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		40EE709B18C4442A00A21203 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4000FA9A18C5A49C00FE099F /* Lato-Bold.ttf in Resources */,
+				40EE70AB18C4442A00A21203 /* InfoPlist.strings in Resources */,
+				4000FA9D18C5A49C00FE099F /* Lato-HairlineItalic.ttf in Resources */,
+				4000FA9F18C5A49C00FE099F /* Lato-Light.ttf in Resources */,
+				40EE70D318C4444300A21203 /* ViewController.xib in Resources */,
+				4000FA9E18C5A49C00FE099F /* Lato-Italic.ttf in Resources */,
+				4000FA9B18C5A49C00FE099F /* Lato-BoldItalic.ttf in Resources */,
+				4000FA9918C5A49C00FE099F /* Lato-BlackItalic.ttf in Resources */,
+				4000FA9C18C5A49C00FE099F /* Lato-Hairline.ttf in Resources */,
+				40EE70B318C4442A00A21203 /* Images.xcassets in Resources */,
+				4000FA9818C5A49C00FE099F /* Lato-Black.ttf in Resources */,
+				4000FAA118C5A49C00FE099F /* Lato-Regular.ttf in Resources */,
+				40EE70D818C4503800A21203 /* MortagagePlanningVc.xib in Resources */,
+				4000FAA018C5A49C00FE099F /* Lato-LightItalic.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40EE70B618C4442A00A21203 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40EE70C418C4442A00A21203 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		40EE709918C4442A00A21203 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4000FA8A18C5A49C00FE099F /* FUISwitch.m in Sources */,
+				4000FA9118C5A49C00FE099F /* UIPopoverController+FlatUI.m in Sources */,
+				4000FA9518C5A49C00FE099F /* UITabBar+FlatUI.m in Sources */,
+				4000FA9218C5A49C00FE099F /* UIProgressView+FlatUI.m in Sources */,
+				4000FA8E18C5A49C00FE099F /* UIFont+FlatUI.m in Sources */,
+				4000FA8518C5A49C00FE099F /* FUIAlertView.m in Sources */,
+				40EE70D218C4444300A21203 /* ViewController.m in Sources */,
+				4000FA8D18C5A49C00FE099F /* UIColor+FlatUI.m in Sources */,
+				4000FA8B18C5A49C00FE099F /* FUITextField.m in Sources */,
+				4000FA9718C5A49C00FE099F /* UIToolbar+FlatUI.m in Sources */,
+				4000FA9018C5A49C00FE099F /* UINavigationBar+FlatUI.m in Sources */,
+				4000FA8618C5A49C00FE099F /* FUIButton.m in Sources */,
+				4000FA9318C5A49C00FE099F /* UISlider+FlatUI.m in Sources */,
+				4000FA9618C5A49C00FE099F /* UITableViewCell+FlatUI.m in Sources */,
+				4000FA8C18C5A49C00FE099F /* UIBarButtonItem+FlatUI.m in Sources */,
+				4000FA8718C5A49C00FE099F /* FUICellBackgroundView.m in Sources */,
+				40EE70B118C4442A00A21203 /* AppDelegate.m in Sources */,
+				4000FA9418C5A49C00FE099F /* UIStepper+FlatUI.m in Sources */,
+				40EE70AD18C4442A00A21203 /* main.m in Sources */,
+				4000FA8918C5A49C00FE099F /* FUISegmentedControl.m in Sources */,
+				4000FA8F18C5A49C00FE099F /* UIImage+FlatUI.m in Sources */,
+				40EE70D718C4503800A21203 /* MortagagePlanningVc.m in Sources */,
+				4000FA8818C5A49C00FE099F /* FUIPopoverBackgroundView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40EE70B418C4442A00A21203 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40EE70C618C4442A00A21203 /* MortagageAppTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		40EE70BE18C4442A00A21203 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 40EE709C18C4442A00A21203 /* MortagageApp */;
+			targetProxy = 40EE70BD18C4442A00A21203 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		40EE70A918C4442A00A21203 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				40EE70AA18C4442A00A21203 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		40EE70C218C4442A00A21203 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				40EE70C318C4442A00A21203 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		40EE70C718C4442A00A21203 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		40EE70C818C4442A00A21203 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		40EE70CA18C4442A00A21203 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MortagageApp/MortagageApp-Prefix.pch";
+				INFOPLIST_FILE = "MortagageApp/MortagageApp-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		40EE70CB18C4442A00A21203 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MortagageApp/MortagageApp-Prefix.pch";
+				INFOPLIST_FILE = "MortagageApp/MortagageApp-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		40EE70CD18C4442A00A21203 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MortagageApp.app/MortagageApp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MortagageApp/MortagageApp-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "MortagageAppTests/MortagageAppTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		40EE70CE18C4442A00A21203 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MortagageApp.app/MortagageApp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MortagageApp/MortagageApp-Prefix.pch";
+				INFOPLIST_FILE = "MortagageAppTests/MortagageAppTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		40EE709818C4442A00A21203 /* Build configuration list for PBXProject "MortagageApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40EE70C718C4442A00A21203 /* Debug */,
+				40EE70C818C4442A00A21203 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		40EE70C918C4442A00A21203 /* Build configuration list for PBXNativeTarget "MortagageApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40EE70CA18C4442A00A21203 /* Debug */,
+				40EE70CB18C4442A00A21203 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		40EE70CC18C4442A00A21203 /* Build configuration list for PBXNativeTarget "MortagageAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40EE70CD18C4442A00A21203 /* Debug */,
+				40EE70CE18C4442A00A21203 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 40EE709518C4442A00A21203 /* Project object */;
+}
