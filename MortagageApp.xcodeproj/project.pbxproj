@@ -52,6 +52,10 @@
 		40EE70D318C4444300A21203 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40EE70D118C4444300A21203 /* ViewController.xib */; };
 		40EE70D718C4503800A21203 /* MortagagePlanningVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 40EE70D518C4503800A21203 /* MortagagePlanningVc.m */; };
 		40EE70D818C4503800A21203 /* MortagagePlanningVc.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40EE70D618C4503800A21203 /* MortagagePlanningVc.xib */; };
+		40F3625B18C6E67E0007B301 /* HomePurchaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 40F3625918C6E67E0007B301 /* HomePurchaseVC.m */; };
+		40F3625C18C6E67E0007B301 /* HomePurchaseVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40F3625A18C6E67E0007B301 /* HomePurchaseVC.xib */; };
+		40F3626018C6E6A60007B301 /* MortgageComparision.m in Sources */ = {isa = PBXBuildFile; fileRef = 40F3625E18C6E6A60007B301 /* MortgageComparision.m */; };
+		40F3626118C6E6A60007B301 /* MortgageComparision.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40F3625F18C6E6A60007B301 /* MortgageComparision.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -136,6 +140,12 @@
 		40EE70D418C4503800A21203 /* MortagagePlanningVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MortagagePlanningVc.h; sourceTree = "<group>"; };
 		40EE70D518C4503800A21203 /* MortagagePlanningVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MortagagePlanningVc.m; sourceTree = "<group>"; };
 		40EE70D618C4503800A21203 /* MortagagePlanningVc.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MortagagePlanningVc.xib; sourceTree = "<group>"; };
+		40F3625818C6E67E0007B301 /* HomePurchaseVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomePurchaseVC.h; sourceTree = "<group>"; };
+		40F3625918C6E67E0007B301 /* HomePurchaseVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomePurchaseVC.m; sourceTree = "<group>"; };
+		40F3625A18C6E67E0007B301 /* HomePurchaseVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomePurchaseVC.xib; sourceTree = "<group>"; };
+		40F3625D18C6E6A60007B301 /* MortgageComparision.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MortgageComparision.h; sourceTree = "<group>"; };
+		40F3625E18C6E6A60007B301 /* MortgageComparision.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MortgageComparision.m; sourceTree = "<group>"; };
+		40F3625F18C6E6A60007B301 /* MortgageComparision.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MortgageComparision.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -283,6 +293,12 @@
 				40EE70D418C4503800A21203 /* MortagagePlanningVc.h */,
 				40EE70D518C4503800A21203 /* MortagagePlanningVc.m */,
 				40EE70D618C4503800A21203 /* MortagagePlanningVc.xib */,
+				40F3625818C6E67E0007B301 /* HomePurchaseVC.h */,
+				40F3625918C6E67E0007B301 /* HomePurchaseVC.m */,
+				40F3625A18C6E67E0007B301 /* HomePurchaseVC.xib */,
+				40F3625D18C6E6A60007B301 /* MortgageComparision.h */,
+				40F3625E18C6E6A60007B301 /* MortgageComparision.m */,
+				40F3625F18C6E6A60007B301 /* MortgageComparision.xib */,
 				40EE70B218C4442A00A21203 /* Images.xcassets */,
 				40EE70A718C4442A00A21203 /* Supporting Files */,
 			);
@@ -396,6 +412,7 @@
 			files = (
 				4000FA9A18C5A49C00FE099F /* Lato-Bold.ttf in Resources */,
 				40EE70AB18C4442A00A21203 /* InfoPlist.strings in Resources */,
+				40F3626118C6E6A60007B301 /* MortgageComparision.xib in Resources */,
 				4000FA9D18C5A49C00FE099F /* Lato-HairlineItalic.ttf in Resources */,
 				4000FA9F18C5A49C00FE099F /* Lato-Light.ttf in Resources */,
 				40EE70D318C4444300A21203 /* ViewController.xib in Resources */,
@@ -406,6 +423,7 @@
 				40EE70B318C4442A00A21203 /* Images.xcassets in Resources */,
 				4000FA9818C5A49C00FE099F /* Lato-Black.ttf in Resources */,
 				4000FAA118C5A49C00FE099F /* Lato-Regular.ttf in Resources */,
+				40F3625C18C6E67E0007B301 /* HomePurchaseVC.xib in Resources */,
 				40EE70D818C4503800A21203 /* MortagagePlanningVc.xib in Resources */,
 				4000FAA018C5A49C00FE099F /* Lato-LightItalic.ttf in Resources */,
 			);
@@ -426,6 +444,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40F3625B18C6E67E0007B301 /* HomePurchaseVC.m in Sources */,
+				40F3626018C6E6A60007B301 /* MortgageComparision.m in Sources */,
 				4000FA8A18C5A49C00FE099F /* FUISwitch.m in Sources */,
 				4000FA9118C5A49C00FE099F /* UIPopoverController+FlatUI.m in Sources */,
 				4000FA9518C5A49C00FE099F /* UITabBar+FlatUI.m in Sources */,
