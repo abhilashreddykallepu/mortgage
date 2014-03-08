@@ -104,12 +104,20 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
     if (indexPath.row==1) {
-        UIActionSheet *sheet=[[UIActionSheet alloc]initWithTitle:@"Done" delegate:self cancelButtonTitle:@"Cancel" destructiveButtonTitle:nil otherButtonTitles: nil];
-        UIView *view=[[UIView alloc]initWithFrame:CGRectMake(2, 4, sheet.frame.size.width-4, sheet.frame.size.height-8)];
-        view.backgroundColor=[UIColor greenSeaColor];
-        [sheet addSubview:view];
-        [sheet showInView:self.view];
+//        UIActionSheet *sheet=[[UIActionSheet alloc]initWithTitle:@"Done" delegate:self cancelButtonTitle:@"Cancel" destructiveButtonTitle:nil otherButtonTitles: nil];
+//        UIView *view=[[UIView alloc]initWithFrame:CGRectMake(2, 4, sheet.frame.size.width-4, sheet.frame.size.height-8)];
+//        view.backgroundColor=[UIColor greenSeaColor];
+//        [sheet addSubview:view];
+//        [sheet showInView:self.view];
+
         
+        [UIView beginAnimations:nil context:NULL];
+        //[colorPicker setFrame:CGRectMake(0.0f, 416.0f, 320.0f, 216.0f)];
+        [UIView commitAnimations];
+        
+        [UIView beginAnimations:nil context:NULL];
+        //[colorPicker setFrame:CGRectMake(0.0f, 480.0f, 320.0f, 216.0f)];
+        [UIView commitAnimations];
     }
 }
 
@@ -139,4 +147,6 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)DoneofAction:(id)sender {
+}
 @end

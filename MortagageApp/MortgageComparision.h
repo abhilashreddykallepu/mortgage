@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface MortgageComparision : UIViewController<UITableViewDelegate,UITableViewDataSource,UITextFieldDelegate>
-
+{
+    IBOutlet UIToolbar *accessorView;
+}
 @end

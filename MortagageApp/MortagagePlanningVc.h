@@ -13,4 +13,5 @@
     NSArray *arr;
     IBOutlet UIToolbar *accessorView;
 }
+- (IBAction)DoneofAction:(id)sender;
 @end

@@ -37,6 +37,8 @@
     placeHolders=[[NSArray alloc]init];
 }
 
+#pragma mark -tableview
+
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
     return 1;
 }
@@ -60,18 +62,46 @@
         
     }
     
-    UITextField *lefttextfield=[[UITextField alloc]initWithFrame:CGRectMake(200, 6, 100, 30)];
+    UILabel *topLbl=[[UILabel alloc]initWithFrame:CGRectMake(85, 2, 150, 25)];
+    topLbl.textColor=[UIColor whiteColor];
+    [cell addSubview:topLbl];
+    
+    
+    UITextField *lefttextfield=[[UITextField alloc]initWithFrame:CGRectMake(5, 27, 150, 28)];
     lefttextfield.borderStyle=UITextBorderStyleLine;
     lefttextfield.tag=indexPath.row;
     lefttextfield.delegate=self;
     //textfield.placeholder=[placeHolderArray objectAtIndex:indexPath.row];
     lefttextfield.textColor=[UIColor whiteColor];
     [cell addSubview:lefttextfield];
+    
+    UITextField *righttextfield=[[UITextField alloc]initWithFrame:CGRectMake(160, 27, 150, 28)];
+    righttextfield.borderStyle=UITextBorderStyleLine;
+    righttextfield.tag=indexPath.row;
+    righttextfield.delegate=self;
+    //textfield.placeholder=[placeHolderArray objectAtIndex:indexPath.row];
+    righttextfield.textColor=[UIColor whiteColor];
+    [cell addSubview:righttextfield];
 
     
     return cell;
 }
 
+#pragma mark -textfielddelegate
+
+-(BOOL)textFieldShouldReturn:(UITextField *)textField{
+    [textField resignFirstResponder];
+    return YES;
+}
+
+- (BOOL)textFieldShouldBeginEditing:(UITextField *)textField{
+    
+    //if (!textField.inputAccessoryView) {
+    
+    textField.inputAccessoryView = accessorView;
+    //}
+    return YES;
+}
 
 - (void)didReceiveMemoryWarning
 {
